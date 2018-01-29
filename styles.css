@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -53,7 +52,6 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0;
 }
 
 .main-nav ul {
@@ -71,25 +69,24 @@ header {
 }
 
 .main-nav li a {
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding: .5em .5em;
     text-decoration: none;
     background-color: #fff;
-    margin-left: 0;
     color: teal;
     border-radius: 5%;
 }
 
 .main-nav li a:hover {
-    border: 3px dashed rgb(10, 112, 112);
+    border: 0.2em dashed rgb(10, 112, 112);
 }
 
 .main-nav li a:active {
     background-color: teal;
     color: #fff;
-    border: 3px dashed white;
+    border: 0.2em dashed white;
 }
 
 
@@ -121,3 +118,32 @@ header {
 
 
 /*********** MEDIA QUERIES  ***********/
+
+@media (max-width: 600px) {
+
+    .main-header {
+        display: block;
+        height: auto;
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .main-nav {
+        display: block;
+    }
+
+    .main-nav ul {
+        display: block;
+    }
+
+    .main-nav ul li {
+        display: block;
+        width: 100%;
+        margin: 0.2em auto;
+    }
+
+
+}
